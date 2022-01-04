@@ -5,7 +5,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity implements PublisherGetter {
+public class MainActivity extends AppCompatActivity implements MainFragment.PublisherGetter {
 
 
     // Создаём класс Паблишера

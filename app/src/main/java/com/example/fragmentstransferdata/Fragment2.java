@@ -23,7 +23,7 @@ public class Fragment2 extends Fragment implements Observer {
 
     // Обработаем событие
     @Override
-    public void updateText(String text) {
+    public void handleAction(String text) {
         textView.setText(text);
     }
 }

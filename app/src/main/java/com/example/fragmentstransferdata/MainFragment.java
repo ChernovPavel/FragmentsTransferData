@@ -31,10 +31,15 @@ public class MainFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 String text = textView.getText().toString();
-                publisher.notify(text);       // Отправить изменившуюся строку
+                publisher.notifyObservers(text);       // Отправить изменившуюся строку
             }
         });
         return view;
+    }
+    // интерфейс который позволяет передать publisher в MainFragment из MainActivity
+
+    public interface PublisherGetter {
+        Publisher getPublisher();
     }
 }
 
